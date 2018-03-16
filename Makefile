@@ -150,6 +150,33 @@ Bubble.cpp.s:
 	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Bubble.cpp.s
 .PHONY : Bubble.cpp.s
 
+Quick.o: Quick.cpp.o
+
+.PHONY : Quick.o
+
+# target to build an object file
+Quick.cpp.o:
+	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Quick.cpp.o
+.PHONY : Quick.cpp.o
+
+Quick.i: Quick.cpp.i
+
+.PHONY : Quick.i
+
+# target to preprocess a source file
+Quick.cpp.i:
+	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Quick.cpp.i
+.PHONY : Quick.cpp.i
+
+Quick.s: Quick.cpp.s
+
+.PHONY : Quick.s
+
+# target to generate assembly for a file
+Quick.cpp.s:
+	$(MAKE) -f CMakeFiles/SORT.dir/build.make CMakeFiles/SORT.dir/Quick.cpp.s
+.PHONY : Quick.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... Bubble.o"
 	@echo "... Bubble.i"
 	@echo "... Bubble.s"
+	@echo "... Quick.o"
+	@echo "... Quick.i"
+	@echo "... Quick.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

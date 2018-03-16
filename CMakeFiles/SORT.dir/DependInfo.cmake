@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/Bubble.cpp" "/home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/CMakeFiles/SORT.dir/Bubble.cpp.o"
+  "/home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/Quick.cpp" "/home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/CMakeFiles/SORT.dir/Quick.cpp.o"
   "/home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/main.cpp" "/home/jm/Pulpit/semestr_vi/programowanie/Bubble_sort_OOP/CMakeFiles/SORT.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -9,4 +9,5 @@ add_executable(
     SORT
     main.cpp
     Bubble.cpp
+    Quick.cpp
 )

@@ -1,12 +1,10 @@
 #include <iostream>
-#include <string>
 #include <vector>
+#include <string>
 using namespace std;
-
 class Bubble 
 {
     std::vector<double> vec;
-    std::vector<double> vec_sorted;
     int liczba{0};
     std::string plik;
     
