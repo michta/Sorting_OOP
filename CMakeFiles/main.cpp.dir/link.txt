@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14  -rdynamic CMakeFiles/main.cpp.dir/Bubble.cpp.o  -o main.cpp 

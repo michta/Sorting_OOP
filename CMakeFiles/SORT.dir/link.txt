@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14  -rdynamic CMakeFiles/SORT.dir/main.cpp.o CMakeFiles/SORT.dir/Bubble.cpp.o  -o SORT 
