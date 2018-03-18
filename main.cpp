@@ -7,12 +7,15 @@
 using namespace std;
 int main(int argc, char *argv[])
 {
+    clock_t start;
+    double duration{0};
     std::vector<double> vec_bubble;
     std::vector<double> vec_quick;
     int liczba{0}, decision{0};
     std::string file_before_sort{""};
     std::string file_after_sort{""};
     std::string rozszerzenie{".csv"};
+
     std::cout << "Podaj nazwe pliku z ktorego odczytac: "; cin >> file_before_sort;
     std::cout << "Podaj nazwe pliku do ktorego zapisac: "; cin >> file_after_sort;
     file_after_sort  += rozszerzenie;
@@ -22,7 +25,7 @@ int main(int argc, char *argv[])
   
     while(true)
     {
-
+            vector<double> sorted_time{0.0};
             cout << "0. implement random \n";
             cout << "1. Bubble sort \n";
             cout << "2. Quick sort \n";
@@ -41,14 +44,23 @@ int main(int argc, char *argv[])
         } break;
           
         case 1: { 
-                cout << "how much?"; cin >> liczba;
+                cout << "how many?"; cin >> liczba;
+            start = clock();
             b.bubble_sort(vec_bubble, liczba);
+            duration = (clock() - start) / (double)CLOCKS_PER_SEC;
+            cout << "Czas: " << duration << "\n";
+            b.data_time(liczba, duration);
             b.set_data(vec_bubble, file_after_sort, liczba);
         } break;
 
         case 2: {
-                cout << "how much?"; cin >> liczba;
+                cout << "how many?"; cin >> liczba;
+
+                start = clock();
                 sort(vec_quick.begin(), vec_quick.begin() + liczba);
+                duration = (clock() - start) / (double)CLOCKS_PER_SEC;
+                cout << "Czas: " << duration << "\n";
+                q.data_time(liczba, duration);
                 q.set_data(vec_quick, file_after_sort, liczba);
            
         } break;

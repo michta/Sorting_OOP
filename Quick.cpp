@@ -57,6 +57,7 @@ void Quick::implement_random(string plik)
 
     void Quick::quick_sort(std::vector<double> vec, int lewy, int prawy)
     {
+         // ...
     }
     void Quick::set_data(std::vector<double> vec, std::string plik, int liczba)
     {
@@ -69,6 +70,16 @@ void Quick::implement_random(string plik)
              file << vec[i] << "\n";
           
        file.close();
+    }
+
+    void Quick::data_time(int number, double val)
+    {
+        ofstream file;
+       
+        file.open("quick_time.csv", ios::out | ios::app);
+        file << number << "," << val;
+        file << "\n";
+        file.close();
     }
 
     void Quick::display_quick_sort(const std::vector<double>& vec, const std::string& text)

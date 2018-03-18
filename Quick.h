@@ -18,6 +18,8 @@ class Quick
 
     void quick_sort(std::vector<double> vec, int, int);
 
+    void data_time(int, double);
+
     void set_data(std::vector<double> vec, std::string, int);
 
     void display_quick_sort(const std::vector<double>& vec, const std::string& text);

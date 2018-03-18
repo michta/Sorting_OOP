@@ -17,6 +17,8 @@ class Bubble
 
     void set_data(vector<double> vec, std::string, int);
 
+    void data_time(int, double);
+
     template<typename V, typename S>
     void display_bubble_sort(const V& vec, const S& text);
 

@@ -92,3 +92,12 @@ void Bubble::bubble_sort(vector<double>& vec, int liczba)
                 Swap(&vec[i], &vec[j]);
         }
 }
+
+void Bubble::data_time(int number, double val)
+    {
+            ofstream file;
+        file.open("bubble_time.csv", ios::out | ios::app);
+        file << number << "," << val;
+        file << "\n";
+        file.close();
+    }
